@@ -31,19 +31,26 @@ public class School {
         students.add(student);
     }
 
+    // the total money earned by the school
     public int getTotalMoneyEarned() {
         return totalMoneyEarned;
     }
 
-    public void setTotalMoneyEarned(int totalMoneyEarned) {
-        this.totalMoneyEarned = totalMoneyEarned;
+    // adds the total money earned by the school
+    // Money earned - money that is supposed to add be added
+    public void setTotalMoneyEarned(int moneyEarned) {
+        totalMoneyEarned += moneyEarned;
     }
 
+    // total money spend by the school
     public int getTotalMoneySpend() {
         return totalMoneySpend;
     }
 
-    public void setTotalMoneySpend(int totalMoneySpend) {
-        this.totalMoneySpend = totalMoneySpend;
+    // update the money spent by the school (the salary given by the school to the teacher)
+    // ** other expenses of the school are neglected.
+    // moneySpend - money that is spent by the school
+    public void setTotalMoneySpend(int moneySpend) {
+        totalMoneyEarned -= moneySpend;
     }
 }
