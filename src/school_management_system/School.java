@@ -38,7 +38,7 @@ public class School {
 
     // adds the total money earned by the school
     // Money earned - money that is supposed to add be added
-    public void setTotalMoneyEarned(int moneyEarned) {
+    public void updateTotalMoneyEarned(int moneyEarned) {
         totalMoneyEarned += moneyEarned;
     }
 
@@ -50,7 +50,7 @@ public class School {
     // update the money spent by the school (the salary given by the school to the teacher)
     // ** other expenses of the school are neglected.
     // moneySpend - money that is spent by the school
-    public void setTotalMoneySpend(int moneySpend) {
+    public void updateTotalMoneySpend(int moneySpend) {
         totalMoneyEarned -= moneySpend;
     }
 }
