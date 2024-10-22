@@ -19,7 +19,7 @@ public class School {
         return teachers;
     }
 
-    public void updateTeachers(Teacher teacher) {
+    public void addTeacher(Teacher teacher) {
         teachers.add(teacher);
     }
 
@@ -27,7 +27,7 @@ public class School {
         return students;
     }
 
-    public void updateStudents(Student student) {
+    public void addStudents(Student student) {
         students.add(student);
     }
 
