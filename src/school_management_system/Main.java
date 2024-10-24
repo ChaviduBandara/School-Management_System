@@ -25,5 +25,6 @@ public class Main {
         studentList.add(s3);
 
         School ris = new School(teacherList, studentList);
+        System.out.println("ris has earned : " + ris.getTotalMoneyEarned());
     }
 }

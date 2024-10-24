@@ -5,8 +5,8 @@ import java.util.List;
 public class School {
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpend;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpend;
 
     public School(List<Teacher> teachers, List<Student> students) {
         this.teachers = teachers;
@@ -38,7 +38,7 @@ public class School {
 
     // adds the total money earned by the school
     // Money earned - money that is supposed to add be added
-    public void updateTotalMoneyEarned(int moneyEarned) {
+    public static void updateTotalMoneyEarned(int moneyEarned) {
         totalMoneyEarned += moneyEarned;
     }
 
@@ -50,7 +50,7 @@ public class School {
     // update the money spent by the school (the salary given by the school to the teacher)
     // ** other expenses of the school are neglected.
     // moneySpend - money that is spent by the school
-    public void updateTotalMoneySpend(int moneySpend) {
+    public static void updateTotalMoneySpend(int moneySpend) {
         totalMoneyEarned -= moneySpend;
     }
 }

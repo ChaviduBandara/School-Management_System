@@ -21,7 +21,9 @@ public class Student {
         this.grade = grade;
     }
 
-    public void updatedFeesPaid(int fees){
+    // keep adding the fees to the feesPaid field
+    // the school is going to receive the funds
+    public void payFees(int fees){
         feesPaid += fees;
     }
 
@@ -41,7 +43,11 @@ public class Student {
         return feesPaid;
     }
 
-    public int getFeesTotal() {
+    public int getFeesTotal()    {
         return feesTotal;
+    }
+
+    public int getRemainingFees(){
+        return feesTotal - feesPaid;
     }
 }
