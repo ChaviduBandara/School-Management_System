@@ -25,6 +25,7 @@ public class Student {
     // the school is going to receive the funds
     public void payFees(int fees){
         feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     public int getId() {
